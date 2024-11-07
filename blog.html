@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderWorld - Blog</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width:100%;
+            height:200vh;
+        
+        }
+        .nav-con{
+            width:100%;
+            height:60px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            background-color: lightslategray;
+        }
+        .list-con{
+            width:60%;
+            height:100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 20px;
+            
+        }
+        .list-con a{
+            text-decoration: none;
+            color:white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            margin-left: 40px;
+        }
+        .nav-h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           margin-left: 20px;
+           color: white;
+        }
+        .foot{
+            width:100%;
+            height: 80px;
+            background-color: lightslategray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3px;
+        
+        }
+        .foot p{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+        .main{
+            width: 100%;
+            height:100%;
+            
+        }
+        .blog1-con{
+            width: 100%;
+            height:500px;
+            justify-content: flex-start;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .blog1-h1{
+            text-align: center;
+            margin-top: 20px;
+
+        }
+        .blog-img{
+            width:570px;
+            height:350px;
+             border-radius: 10px;
+             margin-top: 30px;
+             animation: 2s left ease forwards;
+             transition: 2s;
+        }
+        .blog-ex{
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        .blog-j{
+            color: gray;
+        }
+        .des1{
+            width:100%;
+            height:400px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+    
+             gap:20px;
+        }
+        .des-img{
+            width:600px;
+            height:350px;
+            border-radius: 10px;
+            animation: 2s up ease forwards;
+            transition: 2s;
+        }
+        .des-tit{
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-bottom: 10px;
+        }
+
+        @keyframes left {
+            0%{
+                transform: translateX(0%);
+                opacity: 0;
+            }
+            100%{
+                transform: translateX(20%);
+                opacity: 1;
+            }
+        }
+
+        @keyframes up {
+            0%{
+                transform: translateY(20%);
+                opacity: 0;
+            }
+            100%{
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+        </style>
+</head>
+<body>
+    <nav class="nav-con">
+        <h1 class="nav-h1">WanderWorld</h1>
+
+        <div class="list-con">
+           <a href="index.html">Home</a>
+           <a href="#">Blog</a>
+           <a href="gallerfy.html">Gallery</a>
+           <a href="contact.html">Contact</a>
+           <a href="#">Login</a>
+        </div>
+   </nav>
+
+   <div class="main">
+
+
+    <!-- blog1 -->
+     <div class="blog1-con">
+        <h1 class="blog1-h1">Travel Stories</h1>
+        <img src="blog1.jpg" alt="blog1" class="blog-img">
+
+        <p class="blog-ex">Exploring The Mountains</p>
+        
+         <p class="blog-j">join us we journey through the majestic peaks...</p>
+         
+         <p class="blog-ex"><a href="#" style="text-decoration: none;color: black;">Read More</a></p>
+     </div>
+  
+    <!-- des1 -->
+
+     <div class="des1" style="margin-top: 60px;">
+        <img src="destination1.jpg" alt="destination1" class="des-img">
+        <div class="des-con">
+            <p class="des-tit">Destination 1 - Scenic Views </p>
+            <p style="color:gray;">Discover the breathing landscape of Destination 1. Known for its stunning vistas and peaceful <br>
+                atmosphere, this location is perfect for those looking to reconnect with nature.
+            </p>
+        </div>
+     </div>
+
+    <!-- des2 -->
+
+     <div class="des1" >
+      
+        <div class="des-con">
+            <p class="des-tit">Destination 2 - Costal Escape </p>
+            <p style="color:gray;">Discover the breathing landscape of Destination 2. Known for its stunning vistas and peaceful <br>
+                atmosphere, this location is perfect for those looking to reconnect with nature.
+            </p>
+        </div>
+
+        <img src="destination2.jpg" alt="destination1" class="des-img">
+     </div>
+
+
+   </div>
+
+   <footer class="foot"> 
+    <p>&copy 2024 WanderWorld. All rights reserved</p>
+</footer>
+
+
+</body>
+</html>
